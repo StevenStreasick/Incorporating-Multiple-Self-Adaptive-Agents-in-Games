@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://de34pjpdrrv6b"]
 
-[ext_resource type="Texture2D" uid="uid://b0uu6pbd24q7f" path="res://Spike_Ball.png" id="1_iq7dw"]
+[ext_resource type="Texture2D" uid="uid://1w4c48lnqc5t" path="res://images/Spike_Ball.png" id="1_iq7dw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gco1j"]
 size = Vector2(600, 601)

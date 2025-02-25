@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://c8ngrmgs4cxfy"]
 
-[ext_resource type="Texture2D" uid="uid://crpd51dr88478" path="res://circle_512x512.png" id="1_rj328"]
+[ext_resource type="Texture2D" uid="uid://ul0fyu6b7lmu" path="res://images/circle_512x512.png" id="1_rj328"]
 [ext_resource type="Script" path="res://horizontal_enemy.gd" id="1_ts28c"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_1sdsi"]
