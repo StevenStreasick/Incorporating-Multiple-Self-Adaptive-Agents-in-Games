@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://de34pjpdrrv6b"]
+
+[ext_resource type="Texture2D" uid="uid://b0uu6pbd24q7f" path="res://Spike_Ball.png" id="1_iq7dw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gco1j"]
+size = Vector2(600, 601)
+
+[node name="StaticBody2D" type="StaticBody2D" groups=["Spikes"]]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.15, 0.15)
+shape = SubResource("RectangleShape2D_gco1j")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("1_iq7dw")

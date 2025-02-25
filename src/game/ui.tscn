@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://df60n0s0i8gj7"]
+
+[ext_resource type="Script" path="res://ui.gd" id="1_jvuha"]
+
+[node name="UI" type="MarginContainer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+script = ExtResource("1_jvuha")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+alignment = 1
+
+[node name="Score" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = "Hello World!"
+horizontal_alignment = 1

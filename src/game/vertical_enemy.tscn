@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://d1ulxfickke0n"]
+
+[ext_resource type="Script" path="res://vertical_enemy.gd" id="1_2s27n"]
+[ext_resource type="Texture2D" uid="uid://crpd51dr88478" path="res://circle_512x512.png" id="1_smt4a"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_g4ags"]
+friction = 0.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6nsfp"]
+radius = 128.0
+
+[node name="RigidBody2D" type="RigidBody2D" groups=["Enemies"]]
+z_index = 1
+collision_layer = 2
+physics_material_override = SubResource("PhysicsMaterial_g4ags")
+gravity_scale = 0.0
+script = ExtResource("1_2s27n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_6nsfp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_smt4a")

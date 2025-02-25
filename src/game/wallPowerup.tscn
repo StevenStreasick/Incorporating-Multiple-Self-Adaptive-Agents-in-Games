@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dvhnu4jcal50d"]
+
+[ext_resource type="Script" path="res://wallPowerup.gd" id="1_06j2b"]
+[ext_resource type="Texture2D" uid="uid://c206hs15rpu4w" path="res://EatWalls.png" id="2_bn5ij"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4qj5q"]
+size = Vector2(103, 92)
+
+[node name="StaticBody2D" type="StaticBody2D" groups=["Power_Up"]]
+collision_layer = 4
+script = ExtResource("1_06j2b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["Power_Up"]]
+position = Vector2(-0.5, -2)
+shape = SubResource("RectangleShape2D_4qj5q")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(3.8147e-06, 0)
+scale = Vector2(0.326172, 0.300781)
+texture = ExtResource("2_bn5ij")
